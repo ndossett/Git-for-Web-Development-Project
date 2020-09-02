@@ -67,36 +67,66 @@ Stretch Git Tasks
     11. What elements can I add a class to? 
     any element
     12. How many times can I use the same class on a page? 
+    as many as you need?
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute in the image tag used for? 
+    target="_blank"
+    14. What is the alt attribute in the image tag used for?
+    to describe the image for screen readers or if the image can't be displayed 
     15. How do I reference an id?
+    #
     16. What is the difference between a section and a div
+    section defines areas of a document and div is a container to wrap html elements and style them easier with css
     17. What is CSS used for? 
+    styling a document
     18. How to we select an element? Example - every h2 on the page
+    h2 {}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    an id can only be used once for a unique elements whereas a class can be used on multiple elements. I'd use an id for an h1 and  class for maybe a few divs
     20. How do we select classes in CSS?
+    .
     21. How do we select a p element with a single class of “human””?
+    .human p
     22. What is a parent child selector? When would this be useful? 
+    it's a selector that picks elements that are direct children of other elements. it'd be usedful if you wanted to only call a few specific elements (like p) that are also used multiple times elsewhere in a page.
     23. How do you select all links within a div with the class of sidebar?
+    .sidebar div a {}
     24. What is a pseudo selector?
+    they select elements based on a certain state
     25. What do we use the change the spacing between lines?
+    line-height
     26. What do we use to change the spacing between letters?
+    letter-spacing
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
     28. How do I add a 1px border around my div that is dotted and black?
+    border: dotted black 1px
     29. How do I select everything on the page? 
+    cmd a
     30. How do I write a comment in CSS?
+    /* */
     31. How do I find out what file I am in, when I am using the command line? 
+    pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm. once it's gone it's gone.
     34. Why should I use version control? 
+    it keeps track of changes and helps with collaboration
     35. How often should I commit to github?
+    whenever you finish a section.
     36. What is the command we would use to push our repo up to github? 
+    git push -u origin branch-name
     37. Walk me through Lambda's git flow. 
+    fork the repo, add TL as collaborator, clone the repo to your directory using git clone, cd into the new repo and use git checkout -b for branch. When you're ready to submie, git: add ., commit -m, and push -u origin branch-name 
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    inline does not start a new line and only takes up it's necessary space. block will start a new line and take up all available space.
     2. What happens when an element is positioned absolutely? 
+    It won't change regardesless of other elements around it.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    position: absolute overflow:auto
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    display: h1-h6, p, header  inline: span & em  inline-block: img
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    The box model is a way to position html elements with css. it consists of the content, padding, border and margin. box-sizing: border-box is the fix.
